@@ -6,9 +6,9 @@ from babel.numbers import format_currency
 
 sns.set(style='dark')
 
-orders_df = pd.read_csv('G:\My Drive\Colab Notebooks\submission\dashboard\orders_dataset.csv')
-order_reviews_df = pd.read_csv('G:\My Drive\Colab Notebooks\submission\dashboard/order_reviews_dataset.csv')
-order_payments_df = pd.read_csv('G:\My Drive\Colab Notebooks\submission\dashboard/order_payments_dataset.csv')
+orders_df = pd.read_csv('dashboard\orders_dataset.csv')
+order_reviews_df = pd.read_csv('dashboard/order_reviews_dataset.csv')
+order_payments_df = pd.read_csv('dashboard/order_payments_dataset.csv')
 
 merged_df = pd.merge(orders_df, order_reviews_df, on='order_id', how='left')
 all_df = pd.merge(merged_df, order_payments_df, on='order_id', how='left')
