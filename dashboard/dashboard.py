@@ -6,7 +6,7 @@ from babel.numbers import format_currency
 
 sns.set(style='dark')
 
-orders_df = pd.read_csv("dashboard/orders_dataset.csvv")
+orders_df = pd.read_csv("dashboard/orders_dataset.csv")
 order_reviews_df = pd.read_csv('order_reviews_dataset.csv')
 order_payments_df = pd.read_csv('dashboard/order_payments_dataset.csv')
 
